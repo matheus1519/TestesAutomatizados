@@ -10,7 +10,3 @@ test:
     paths:
       - node_modules/
       - .yarn
-
-build:
-  script: yarn start
-  stage: yarn start
