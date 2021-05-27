@@ -1,16 +1,11 @@
-image: node:12
+image: node:9.11.1
 
 before_script:
-  - npm install
+  - yarn install --cache-folder .yarn
 
-cache:
-  paths:
-    - node_modules/
-
-test:lint:
-  script:
-    - npm run lint
-
-test:ci:
-  script:
-    - npm run test:ci
+test:
+  stage: test
+  cache:
+    paths:
+      - node_modules/
+      - .yarn
