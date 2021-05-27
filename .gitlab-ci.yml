@@ -1,12 +1,11 @@
 image: node:12
 
 before_script:
-  - yarn install --cache-folder .yarn
+  - npm install
 
 test:
-  script: yarn test
-  stage: yarn test
+  script: npm run  test
+  stage: npm run  test
   cache:
     paths:
       - node_modules/
-      - .yarn
