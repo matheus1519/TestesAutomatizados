@@ -4,13 +4,13 @@ before_script:
   - yarn install --cache-folder .yarn
 
 test:
-  script: test
-  stage: test
+  script: yarn test
+  stage: yarn test
   cache:
     paths:
       - node_modules/
       - .yarn
 
 build:
-  script: start
-  stage: start
+  script: yarn start
+  stage: yarn start
