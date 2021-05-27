@@ -1,11 +1,16 @@
-image: node:9.11.1
+image: node:12
 
 before_script:
   - yarn install --cache-folder .yarn
 
 test:
+  script: test
   stage: test
   cache:
     paths:
       - node_modules/
       - .yarn
+
+build:
+  script: start
+  stage: start
