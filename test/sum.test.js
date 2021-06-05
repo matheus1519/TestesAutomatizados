@@ -1,5 +1,7 @@
-import sum from "./sum";
+import sum from '../src/basicOperations/sum'
 
-it("should be able to sum a two numbers", () => {
-  expect(sum(1, 2)).toBe(3);
-});
+describe('Sum from math', () => {
+  it('should be able to sum two numbers', () => {
+    expect(sum(1, 2)).toBe(3)
+  })
+})
