@@ -1,0 +1,23 @@
+import breakLines from '../src/lineBreak'
+
+describe('Dojo line break with TDD', () => {
+  it('should break a line of a sentence with a number of columns given by a user', () => {
+    expect(
+      breakLines('Um pequeno jabuti xereta viu dez cegonhas felizes.', 20)
+    ).toBe(['Um pequeno jabuti', 'xereta viu dez', 'cegonhas felizes.'])
+  })
+})
+
+/*
+
+Escreva um programa em que dado uma frase e a quantidade de colunas que podem ser exibidas na tela, faça a quebra de linhas sem quebrar as palavras.
+
+Por exemplo, se passarmos a frase "Um pequeno jabuti xereta viu dez cegonhas felizes." e pedirmos para ela ser exibida em 20 colunas, teremos como resposta:
+
+Um pequeno jabuti
+
+xereta viu dez
+
+cegonhas felizes.
+
+*/
