@@ -4,7 +4,11 @@ describe('Dojo line break with TDD', () => {
   it('should break a line of a sentence with a number of columns given by a user', () => {
     expect(
       breakLines('Um pequeno jabuti xereta viu dez cegonhas felizes.', 20)
-    ).toBe(['Um pequeno jabuti', 'xereta viu dez', 'cegonhas felizes.'])
+    ).toStrictEqual([
+      'Um pequeno jabuti',
+      'xereta viu dez',
+      'cegonhas felizes.',
+    ])
   })
 })
 
